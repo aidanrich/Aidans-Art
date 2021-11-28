@@ -6,14 +6,14 @@ import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container'
 import { Link } from "react-router-dom";
 import { useMutation } from "@apollo/client";
-import ADD_VIDEO from "../../utils/mutations";
+import ADD_ART from "../../utils/mutations";
 import Auth from "../../utils/auth";
 // Upload page using cloudinary
 function CloudinaryUploadWidget() {
   const [title, setTitle] = useState("");
   const [URL, setURL] = useState("");
-  const [author, setAuthor] = useState("");
-  const [addVideo, { error }] = useMutation(ADD_VIDEO);
+  
+  const [addArt, { error }] = useMutation(ADD_ART);
   // Upload widget courtesy of cloudinary
   const myWidget = window.cloudinary.createUploadWidget(
     {
@@ -36,11 +36,10 @@ function CloudinaryUploadWidget() {
   const handleFormSubmit = async (event) => {
     event.preventDefault();
     try {
-      addVideo({
+      addArt({
         variables: {
           title: title, // title fromm input field
           cloudURL: URL, // URL from cloudinary upload
-          videoAuthor: Auth.getProfile().data.name, // author from logged in user
         },
       });
       setTitle(""); // Input field goes back to blank on submit
