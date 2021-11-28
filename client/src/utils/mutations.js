@@ -34,7 +34,7 @@ export const LOGIN_USER = gql`
 
 
 
-export const REMOVE_VIDEO = gql`
+export const REMOVE_ART = gql`
   mutation removeArt($artId: ID!) {
     removeArt(artId: $artId) {
       _id
@@ -45,7 +45,7 @@ export const REMOVE_VIDEO = gql`
   }
 `
 
-export default ADD_VIDEO;
+export default ADD_ART;
 
 
 

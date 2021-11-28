@@ -3,18 +3,18 @@ import { useQuery, useMutation } from "@apollo/client";
 import { useParams } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Auth from "../utils/auth";
-import { QUERY_SINGLE_VIDEO } from "../utils/queries";
-import { REMOVE_VIDEO } from "../utils/mutations";
+import { QUERY_SINGLE_ART } from "../utils/queries";
+import { REMOVE_ART } from "../utils/mutations";
 import Card from "react-bootstrap/Card";
 
 const VideoCrud = () => {
   const { videoId } = useParams();
   // Queries singe video based on params video id
-  const { loading, data } = useQuery(QUERY_SINGLE_VIDEO, {
+  const { loading, data } = useQuery(QUERY_SINGLE_ART, {
     variables: { videoId: videoId },
   });
   // Delete video mutation
-  const [deleteVideo, { error }] = useMutation(REMOVE_VIDEO);
+  const [deleteVideo, { error }] = useMutation(REMOVE_ART);
   const video = data?.video || {};
   if (loading) {
     return <div>Loading...</div>;

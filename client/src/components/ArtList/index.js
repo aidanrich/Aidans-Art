@@ -20,7 +20,7 @@ const ArtList = ({ art }) => {
             <Card.Header as="h2" className="video-title">{picture.title}</Card.Header>
             <Card.Body className="video-body">
               <Card.Title className="roboto-font"><i className="fas fa-calendar-alt"></i>  {picture.publishDate}</Card.Title>
-              <Image src={picture.cloudURL} />
+              <image src={picture.cloudURL} />
             </Card.Body >
           </Card >
         ))
