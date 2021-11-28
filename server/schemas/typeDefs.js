@@ -25,7 +25,8 @@ const typeDefs = gql`
    art: [Art]!
    singleArt(artId: ID!): Art
   #  myVideos(videoAuthor: String!): [Video]
-
+   users: [User]
+   user(_id: ID!): User
   #  me: User
   }
 

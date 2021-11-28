@@ -11,7 +11,7 @@ import './index.css';
 import Home from "./pages/Home";
 import VideoCrud from "./pages/VideoCrud"
 import Video from "./pages/Video";
-// import Signup from "./pages/Signup";
+import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -51,9 +51,9 @@ function App() {
           <Route exact path="/login">
             <Login />
           </Route>
-          {/* <Route exact path="/signup">
+          <Route exact path="/signup">
             <Signup />
-          </Route> */}
+          </Route>
           <Route exact path="/upload">
             <CloudinaryUploadWidget />
           </Route>
