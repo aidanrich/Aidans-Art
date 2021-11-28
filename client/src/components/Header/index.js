@@ -6,10 +6,7 @@ import Auth from '../../utils/auth';
 
 const Header = () => {
   // if user is not logged in, level is -1 which restricts certain privileges 
-  let level = -1;
-  if (Auth.getProfile()) {
-    level = Auth.getProfile().data.level
-  };
+  
   // Calls logout function on click
   const logout = (event) => {
     event.preventDefault();
@@ -25,11 +22,9 @@ const Header = () => {
           <Link className="nav-item nav-link" to="/">Home</Link>
           {Auth.loggedIn() ? (
             <>
-              {level === 1 || level === 3 ? (<Link className="nav-item nav-link" to="/upload"> Upload</Link>) : ("")}
-              {level === 1 || level === 3 ? (<Link className="nav-item nav-link" to="/me">
-                View My Profile
-              </Link>) : ("")}
-              <Link className="nav-item nav-link" onClick={logout}>
+              <Link className="nav-item nav-link" to="/upload"> Upload</Link>
+              
+              <Link className="nav-item nav-link" to="/" onClick={logout}>
                 Logout
               </Link>
             </>
@@ -37,9 +32,6 @@ const Header = () => {
             <>
               <Link className="nav-item nav-link" to="/login">
                 Login
-              </Link>
-              <Link className="nav-item nav-link" to="/signup">
-                Signup
               </Link>
             </>
           )}
