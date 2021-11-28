@@ -1,8 +1,8 @@
 import { gql } from "@apollo/client";
 
-export const QUERY_VIDEOS = gql`
-  query allVids {
-    videos {
+export const QUERY_ART = gql`
+  query allArt {
+    art {
       _id
       title
       cloudURL
@@ -15,9 +15,9 @@ export const QUERY_VIDEOS = gql`
   }
 `;
 
-export const QUERY_SINGLE_VIDEO = gql`
-  query singleVid($videoId: ID!) {
-    video(videoId: $videoId) {
+export const QUERY_SINGLE_ART = gql`
+  query singleArt($videoId: ID!) {
+    singleArt(videoId: $videoId) {
       _id
       title
       cloudURL
@@ -31,19 +31,6 @@ export const QUERY_SINGLE_VIDEO = gql`
   }
 `;
 
-export const QUERY_MY_VIDEOS = gql`
-  query myVids($videoAuthor: String!) {
-    myVideos(videoAuthor: $videoAuthor) {
-      _id
-      title
-      cloudURL
-      likes
-      dislikes
-      views
-      publishDate
-    }
-  }
-`
 
 export const QUERY_USERS = gql`
   query allUsers {
@@ -66,30 +53,4 @@ export const QUERY_SINGLE_USER = gql`
   }
 `;
 
-export const QUERY_GENRES = gql`
-  query allGenres {
-    genres {
-      name
-      videos
-    }
-  }
-`;
 
-export const QUERY_SINGLE_GENRE = gql`
-  query singleGenre($id: ID!) {
-    genre(_id: $id) {
-      name
-      videos
-    }
-  }
-`;
-
-export const QUERY_ME = gql`
-  query me {
-    me {
-      _id
-      name
-      level
-    }
-  }
-`;

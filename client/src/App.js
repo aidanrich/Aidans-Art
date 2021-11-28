@@ -11,12 +11,12 @@ import './index.css';
 import Home from "./pages/Home";
 import VideoCrud from "./pages/VideoCrud"
 import Video from "./pages/Video";
-import Signup from "./pages/Signup";
+// import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import CloudinaryUploadWidget from "./components/Upload";
-import Profile from "./pages/Profile"
+// import Profile from "./pages/Profile"
 // Query and mutate models on localhost:3001/graphql
 const httpLink = createHttpLink({
   uri: "/graphql",
@@ -51,9 +51,9 @@ function App() {
           <Route exact path="/login">
             <Login />
           </Route>
-          <Route exact path="/signup">
+          {/* <Route exact path="/signup">
             <Signup />
-          </Route>
+          </Route> */}
           <Route exact path="/upload">
             <CloudinaryUploadWidget />
           </Route>
@@ -62,9 +62,6 @@ function App() {
           </Route>
           <Route exact path="/videosCrud/:videoId">
             <VideoCrud />
-          </Route>
-          <Route exact path="/me">
-            <Profile />
           </Route>
         </div>
         <Footer />
