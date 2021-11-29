@@ -57,9 +57,9 @@ function App() {
           <Route exact path="/upload">
             <CloudinaryUploadWidget />
           </Route>
-          <Route exact path="/videos/:videoId">
+          {/* <Route exact path="/videos/:videoId">
             <Video />
-          </Route>
+          </Route> */}
           <Route exact path="/videosCrud/:videoId">
             <VideoCrud />
           </Route>
