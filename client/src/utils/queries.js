@@ -6,11 +6,7 @@ export const QUERY_ART = gql`
       _id
       title
       cloudURL
-      likes
-      dislikes
-      views
       publishDate
-      videoAuthor
     }
   }
 `;
@@ -21,12 +17,7 @@ export const QUERY_SINGLE_ART = gql`
       _id
       title
       cloudURL
-      likes
-      dislikes
-      views
       publishDate
-      likedBy
-      dislikedBy
     }
   }
 `;
