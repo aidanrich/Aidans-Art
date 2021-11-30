@@ -12,8 +12,8 @@ export const QUERY_ART = gql`
 `;
 
 export const QUERY_SINGLE_ART = gql`
-  query singleArt($videoId: ID!) {
-    singleArt(videoId: $videoId) {
+  query oneArt($artId: ID!) {
+    singleArt(artId: $artId) {
       _id
       title
       cloudURL

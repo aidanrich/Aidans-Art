@@ -57,10 +57,10 @@ function App() {
           <Route exact path="/upload">
             <CloudinaryUploadWidget />
           </Route>
-          {/* <Route exact path="/videos/:videoId">
+          <Route exact path="/videos/:artId">
             <Video />
-          </Route> */}
-          <Route exact path="/videosCrud/:videoId">
+          </Route>
+          <Route exact path="/videosCrud/:artId">
             <VideoCrud />
           </Route>
         </div>

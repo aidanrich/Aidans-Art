@@ -12,7 +12,6 @@ const typeDefs = gql`
     _id: ID
     title: String!
     cloudURL: String!
-    likes: Int
     publishDate: String
   }
 
@@ -25,7 +24,7 @@ const typeDefs = gql`
    art: [Art]!
    singleArt(artId: ID!): Art
   #  myVideos(videoAuthor: String!): [Video]
-   users: [User]!
+   users: [User]
    user(_id: ID!): User
    me: User
   }
