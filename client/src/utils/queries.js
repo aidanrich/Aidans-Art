@@ -22,6 +22,18 @@ export const QUERY_SINGLE_ART = gql`
   }
 `;
 
+export const QUERY_MSPAINT = gql`
+  query allmsPaint($genre: String!) {
+    msPaint(genre: $genre) {
+      _id
+      title
+      cloudURL
+      genre
+      publishDate
+    }
+  }
+`;
+
 
 export const QUERY_USERS = gql`
   query allUsers {

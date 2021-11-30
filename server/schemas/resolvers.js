@@ -24,9 +24,9 @@ const resolvers = {
       return await Art.findById({ _id: artId });
     },
 
-    // myVideos: async (parent, { videoAuthor }) => {
-    //   return await Video.find({ videoAuthor: videoAuthor });
-    // },
+    msPaint: async (parent, { genre }) => {
+      return await Art.find({ genre: genre });
+    },
 
     // By adding context to our query, we can retrieve the logged in user without specifically searching for them
 
