@@ -15,7 +15,7 @@ const Header = () => {
 
   return (
     <Navbar expand="lg">
-      <Navbar.Brand className="main-header"> Prequel</Navbar.Brand>
+      <Navbar.Brand className="main-header">Aidan's Art Blog</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto">
