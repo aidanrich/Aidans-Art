@@ -42,6 +42,10 @@ h1 {
   text-align: center;
 }
 
+.card-body {
+  color: var(--gold);
+}
+
 .padding-login {
   padding-left: 50px;
 }

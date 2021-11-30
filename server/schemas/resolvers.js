@@ -41,8 +41,8 @@ const resolvers = {
 
   Mutation: {
     // Mutation to add a video
-    addArt: async (parent, { title, cloudURL }) => {
-      const art = await Art.create({ title, cloudURL });
+    addArt: async (parent, { title, cloudURL, genre }) => {
+      const art = await Art.create({ title, cloudURL, genre });
       return art;
     },
 

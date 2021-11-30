@@ -11,6 +11,10 @@ const artSchema = new Schema({
     type: String,
     required: true,
   },
+  genre: {
+    type: String,
+    required: true,
+  },
   publishDate: {
     type: Date,
     default: Date.now,

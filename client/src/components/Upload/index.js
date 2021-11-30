@@ -11,8 +11,9 @@ import Auth from "../../utils/auth";
 // Upload page using cloudinary
 function CloudinaryUploadWidget() {
   const [title, setTitle] = useState("");
+  const [genre, setGenre] = useState("");
   const [URL, setURL] = useState("");
-  
+
   const [addArt, { error }] = useMutation(ADD_ART);
   // Upload widget courtesy of cloudinary
   const myWidget = window.cloudinary.createUploadWidget(
@@ -40,6 +41,7 @@ function CloudinaryUploadWidget() {
         variables: {
           title: title, // title fromm input field
           cloudURL: URL, // URL from cloudinary upload
+          genre: genre
         },
       });
       setTitle(""); // Input field goes back to blank on submit
@@ -74,6 +76,15 @@ function CloudinaryUploadWidget() {
                 }}
                 value={title}
               />
+              <div>
+                <select onChange={(event) => { setGenre(event.target.value) }} name="genre" id="level-select">
+                  <option value="acrylic">Acrylic Painting</option>
+                  <option value="ink">Pen & Ink</option>
+                  <option value="mspaint">MS Paint</option>
+                  <option value="sketch">Sketch Book</option>
+                  <option value="misc">Misc</option>
+                </select>
+              </div>
             </Form.Group>
           </Col>
         </Row>

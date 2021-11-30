@@ -12,6 +12,7 @@ const typeDefs = gql`
     _id: ID
     title: String!
     cloudURL: String!
+    genre: String!
     publishDate: String
   }
 
@@ -30,7 +31,7 @@ const typeDefs = gql`
   }
 
   type Mutation {
-    addArt(title: String!, cloudURL: String!): Art
+    addArt(title: String!, cloudURL: String!, genre: String!): Art
     # addUser(name: String!, email: String!, password: String!, level: Int): Auth
     login(email: String!, password: String!): Auth
     removeArt(artId: ID!): Art
