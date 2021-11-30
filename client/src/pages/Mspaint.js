@@ -2,17 +2,17 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useQuery } from "@apollo/client";
 import Card from "react-bootstrap/Card";
-import { QUERY_MSPAINT } from "../utils/queries"
+import { QUERY_GENRE } from "../utils/queries"
 
 // Videos appearing on home page
 const Mspaint = () => {
   // If there are no videos, "No Videos Yet!" message appears
   const genre = "mspaint"
-  const { loading, data } = useQuery(QUERY_MSPAINT, {
+  const { loading, data } = useQuery(QUERY_GENRE, {
       variables: { genre: genre }
   });
 
-  const art = data?.msPaint || [];
+  const art = data?.artGenre || [];
   console.log(data)
 
   if (!art.length) {

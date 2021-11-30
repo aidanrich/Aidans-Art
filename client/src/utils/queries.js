@@ -22,9 +22,9 @@ export const QUERY_SINGLE_ART = gql`
   }
 `;
 
-export const QUERY_MSPAINT = gql`
-  query allmsPaint($genre: String!) {
-    msPaint(genre: $genre) {
+export const QUERY_GENRE = gql`
+  query allGenre($genre: String!) {
+    artGenre(genre: $genre) {
       _id
       title
       cloudURL

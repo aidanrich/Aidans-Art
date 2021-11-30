@@ -21,6 +21,10 @@ const Header = () => {
         <Nav className="me-auto">
           <Link className="nav-item nav-link" to="/">Home</Link>
           <Link className="nav-item nav-link" to="/mspaint">MS Paint</Link>
+          <Link className="nav-item nav-link" to="/acrylic">Acrylic Painting</Link>
+          <Link className="nav-item nav-link" to="/ink">Pen and Ink</Link>
+          <Link className="nav-item nav-link" to="/sketch">Sketchbook</Link>
+          <Link className="nav-item nav-link" to="/misc">Random</Link>
           {Auth.loggedIn() ? (
             <>
               <Link className="nav-item nav-link" to="/upload"> Upload</Link>

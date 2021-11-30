@@ -24,7 +24,7 @@ const resolvers = {
       return await Art.findById({ _id: artId });
     },
 
-    msPaint: async (parent, { genre }) => {
+    artGenre: async (parent, { genre }) => {
       return await Art.find({ genre: genre });
     },
 

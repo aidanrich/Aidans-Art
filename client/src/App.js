@@ -17,6 +17,10 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import CloudinaryUploadWidget from "./components/Upload";
 import Mspaint from "./pages/Mspaint"
+import Misc from "./pages/Misc"
+import Ink from "./pages/Ink"
+import Sketch from "./pages/Sketch"
+import Acrylic from "./pages/Acrylic"
 // import Profile from "./pages/Profile"
 // Query and mutate models on localhost:3001/graphql
 const httpLink = createHttpLink({
@@ -66,6 +70,18 @@ function App() {
           </Route>
           <Route exact path="/mspaint">
             <Mspaint />
+          </Route>
+          <Route exact path="/acrylic">
+            <Acrylic />
+          </Route>
+          <Route exact path="/ink">
+            <Ink />
+          </Route>
+          <Route exact path="/sketch">
+            <Sketch />
+          </Route>
+          <Route exact path="/misc">
+            <Misc />
           </Route>
         </div>
         <Footer />

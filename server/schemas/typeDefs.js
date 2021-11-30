@@ -24,7 +24,7 @@ const typeDefs = gql`
   type Query {
    art: [Art]!
    singleArt(artId: ID!): Art
-   msPaint(genre: String!): [Art]
+   artGenre(genre: String!): [Art]
    users: [User]
    user(_id: ID!): User
    me: User
