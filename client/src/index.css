@@ -1,12 +1,12 @@
 :root {
-  --navyBlue: #000342;
-  --dustBlue: #2f484d;
-  --LdustBlue: #43676e;
-  --green: #4a4317;
-  --gold: #c48600;
+  --navyBlue: #FBFFFE;
+  --dustBlue: #FBFFFE;
+  --LdustBlue: #bdbdbd;
+  --green: #797777;
+  --gold: #af8180;
   --red: #812301;
   --maroon: #301408;
-  --silver: #c0c0c0;
+  --silver: #8b6c6c;
 }
 
 body {
@@ -99,7 +99,7 @@ nav {
 }
 
 .navbar-brand {
-  font-family: "Limelight", cursive;
+  font-family: 'Courier New', Courier, monospace;
   font-size: 3.25rem;
 }
 

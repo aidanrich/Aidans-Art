@@ -10,7 +10,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import './index.css';
 import Home from "./pages/Home";
 import VideoCrud from "./pages/VideoCrud"
-import Video from "./pages/Video";
+import Art from "./pages/Art";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import Header from "./components/Header";
@@ -58,7 +58,7 @@ function App() {
             <CloudinaryUploadWidget />
           </Route>
           <Route exact path="/videos/:artId">
-            <Video />
+            <Art />
           </Route>
           <Route exact path="/videosCrud/:artId">
             <VideoCrud />
