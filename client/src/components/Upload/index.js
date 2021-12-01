@@ -13,6 +13,7 @@ function CloudinaryUploadWidget() {
   const [title, setTitle] = useState("");
   const [genre, setGenre] = useState("");
   const [URL, setURL] = useState("");
+  const [blurb, setBlurb] = useState("")
 
   const [addArt, { error }] = useMutation(ADD_ART);
   // Upload widget courtesy of cloudinary
@@ -41,7 +42,8 @@ function CloudinaryUploadWidget() {
         variables: {
           title: title, // title fromm input field
           cloudURL: URL, // URL from cloudinary upload
-          genre: genre
+          genre: genre,
+          blurb: blurb
         },
       });
       setTitle(""); // Input field goes back to blank on submit
@@ -86,6 +88,9 @@ function CloudinaryUploadWidget() {
                   <option value="sketch">Sketch Book</option>
                   <option value="misc">Misc</option>
                 </select>
+              </div>
+              <div>
+                <textarea type="text" placeholder="description" onChange={(event) => { setBlurb(event.target.value) }} />
               </div>
             </Form.Group>
           </Col>

@@ -17,6 +17,7 @@ export const QUERY_SINGLE_ART = gql`
       _id
       title
       cloudURL
+      blurb
       publishDate
     }
   }
@@ -29,6 +30,7 @@ export const QUERY_GENRE = gql`
       title
       cloudURL
       genre
+      blurb
       publishDate
     }
   }

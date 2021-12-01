@@ -15,6 +15,9 @@ const artSchema = new Schema({
     type: String,
     required: true,
   },
+  blurb: {
+    type: String,
+  },
   publishDate: {
     type: Date,
     default: Date.now,

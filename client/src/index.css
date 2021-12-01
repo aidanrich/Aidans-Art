@@ -74,6 +74,10 @@ label {
   font-family: 'Courier New', Courier, monospace;
 }
 
+.blurb {
+  padding: 10px;
+}
+
 .login-header {
   color: white;
   font-family: "Montserrat", sans-serif;

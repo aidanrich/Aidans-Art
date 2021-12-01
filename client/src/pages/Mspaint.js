@@ -38,6 +38,7 @@ const Mspaint = () => {
               <Link to={`/videos/${picture._id}`}>
               <img src={picture.cloudURL} alt={picture.title} />
               </Link>
+              <Card.Title className="roboto-font blurb"><i class="fas fa-comment"></i> {picture.blurb}</Card.Title>
             </Card.Body >
           </Card >
         ))

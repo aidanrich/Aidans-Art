@@ -9,13 +9,14 @@ export const ADD_USER = gql`
 `;
 
 export const ADD_ART = gql`
-  mutation addArt($title: String!, $cloudURL: String! $genre: String!) {
-    addArt(title: $title, cloudURL: $cloudURL, genre: $genre) {
+  mutation addArt($title: String!, $cloudURL: String! $genre: String!, $blurb: String) {
+    addArt(title: $title, cloudURL: $cloudURL, genre: $genre, blurb: $blurb) {
       _id
       title
       cloudURL
       publishDate
       genre
+      blurb
     }
   }
 `;
