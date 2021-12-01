@@ -52,9 +52,11 @@ function CloudinaryUploadWidget() {
   };
 
   return (
+    <div>
+      {Auth.loggedIn() ? (
     <Container className="upload-container justify-content-md-center">
       <Row className="justify-content-md-center upload-padding-top">
-        <Form.Label>Upload Your Video</Form.Label>
+        <Form.Label>Upload Your Art</Form.Label>
       </Row>
       <Row className="justify-content-md-center">
         <button
@@ -69,7 +71,7 @@ function CloudinaryUploadWidget() {
         <Row className="justify-content-md-center">
           <Col sm={5}>
             <Form.Group as={Col} className="upload-label" controlId="formGridEmail">
-              <Form.Label  >Video Title</Form.Label>
+              <Form.Label  >Artwork Title</Form.Label>
               <Form.Control
                 onChange={(event) => {
                   setTitle(event.target.value);
@@ -95,6 +97,13 @@ function CloudinaryUploadWidget() {
         </Row>
       </Form>
     </Container>
+    ) : (
+      <p>
+        You need to be logged in to upload a video. Please{" "}
+        <Link to="/login">login</Link>
+      </p>
+    )}
+    </div>
   );
 }
 

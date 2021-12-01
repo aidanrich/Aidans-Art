@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 import { useQuery } from "@apollo/client";
 import Card from "react-bootstrap/Card";
 import { QUERY_GENRE } from "../utils/queries"
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 // Videos appearing on home page
 const Mspaint = () => {
@@ -22,6 +25,9 @@ const Mspaint = () => {
   
 
   return (
+    <Container>
+    <Row>
+      <Col>
     <div>
       {art &&
         art.map((picture) => (
@@ -37,6 +43,9 @@ const Mspaint = () => {
         ))
       }
     </div >
+    </Col>
+      </Row>
+    </Container>
   );
 };
 

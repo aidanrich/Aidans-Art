@@ -3,23 +3,19 @@ import { useQuery } from "@apollo/client";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { QUERY_ART } from "../utils/queries";
-import ArtList from "../components/ArtList";
+
 // Home page
 const Home = () => {
-  // Queries videos
-  const { loading, data } = useQuery(QUERY_ART);
-  const art = data?.art || [];
+
 
   return (
     <Container>
       <Row>
         <Col>
-          {loading ? (
-            <div>Loading...</div>
-          ) : (
-            <ArtList art={art} title="HEADER TEXT" />
-          )}
+        <h1 className="home-welcome">Welcome to my art portfolio</h1>
+        <h5 className="home-p">
+          My name is Aidan Rich. I am an artist and web developer. This is my personal artwork from over the years, organized roughly by medium. Feel free to click around and take a look.
+        </h5>
         </Col>
       </Row>
     </Container>

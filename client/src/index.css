@@ -62,6 +62,18 @@ label {
   font-family: "Montserrat", sans-serif;
 }
 
+.home-welcome {
+  color: var(--gold);
+  margin-top: 5rem;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.home-p {
+  color: var(--gold);
+  margin-top: 2rem;
+  font-family: 'Courier New', Courier, monospace;
+}
+
 .login-header {
   color: white;
   font-family: "Montserrat", sans-serif;
