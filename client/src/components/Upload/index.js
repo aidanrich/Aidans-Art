@@ -11,7 +11,7 @@ import Auth from "../../utils/auth";
 // Upload page using cloudinary
 function CloudinaryUploadWidget() {
   const [title, setTitle] = useState("");
-  const [genre, setGenre] = useState("");
+  const [genre, setGenre] = useState("Acrylic");
   const [URL, setURL] = useState("");
   const [blurb, setBlurb] = useState("")
 
