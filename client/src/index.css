@@ -9,8 +9,6 @@
   --silver: #8b6c6c;
 }
 
-
-
 /* -----Footer Positioning----- */
 #root {
   position: relative;
@@ -18,8 +16,7 @@
 }
 
 body {
-  background-color: rgb(243, 243, 243);
-
+  background-color: rgb(218, 218, 218);
 }
 
 .footer-positioning {
@@ -60,13 +57,13 @@ label {
   width: 550px;
   padding: 10px;
   margin-top: 15px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .home-welcome {
   color: var(--gold);
   margin-top: 5rem;
-  font-family: "Courier New", Courier, monospace;
+  font-family: 'Indie Flower', cursive;
 }
 
 .home-p {
@@ -80,8 +77,8 @@ label {
 }
 
 .login-header {
-  color: white;
-  font-family: "Montserrat", sans-serif;
+  color: var(--gold);
+  font-family: "Courier New", Courier, monospace;
   margin-top: 10px;
 }
 
@@ -93,7 +90,7 @@ button.button6 {
   border-radius: 0.15em;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: "Roboto", sans-serif;
+  font-family: "Courier New", Courier, monospace;
   text-transform: uppercase;
   font-weight: 400;
   color: #ffffff;
@@ -150,7 +147,7 @@ nav {
 }
 
 .nav-item {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Indie Flower', cursive;
   font-weight: 900;
 }
 
@@ -205,7 +202,7 @@ img {
   margin-top: 15px;
   padding-bottom: 10px;
   background-color: var(--LdustBlue);
-  font-family: "Montserrat", sans-serif;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .upload-label {
@@ -220,11 +217,16 @@ img {
 /* -----Video Card Stylings-----*/
 
 .card-header {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Indie Flower', cursive;
   font-weight: 900;
   background-color: #fff;
-  background-image:
-linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px);
+  background-image: linear-gradient(
+    90deg,
+    transparent 79px,
+    #abced4 79px,
+    #abced4 81px,
+    transparent 81px
+  );
   background-size: 100% 1.2em;
   color: var(--gold);
 }
@@ -243,7 +245,7 @@ linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent
 }
 
 .roboto-font {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Courier New", Courier, monospace;
   font-weight: 400;
   font-size: 1rem;
 }
