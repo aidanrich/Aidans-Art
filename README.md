@@ -19,6 +19,7 @@
 ## Credits
 - I used React.js, GraphQL, MongoDB, Mongo Atlas, Bootstrap and Cloudinary.
 - Some of this code was refactored from a previous project I worked on: https://github.com/aidanrich/prequel.
+- used the lined paper style from https://projects.verou.me/css3patterns/ by Sarah Backhouse. Site's github: https://github.com/LeaVerou/css3patterns
 
 ## Badges
 ![alt text](https://img.shields.io/badge/Script-JS-brightgreen)![License Badge](https://img.shields.io/badge/license-MIT-blue)
