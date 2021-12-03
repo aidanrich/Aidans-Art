@@ -25,7 +25,7 @@ const resolvers = {
     },
 
     artGenre: async (parent, { genre }) => {
-      return await Art.find({ genre: genre });
+      return await Art.find({ genre: genre }).sort({ publishDate: -1 });
     },
 
     // By adding context to our query, we can retrieve the logged in user without specifically searching for them
