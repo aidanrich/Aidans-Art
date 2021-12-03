@@ -1,6 +1,6 @@
 :root {
-  --navyBlue: #FBFFFE;
-  --dustBlue: #FBFFFE;
+  --navyBlue: #fbfffe;
+  --dustBlue: #fbfffe;
   --LdustBlue: #bdbdbd;
   --green: #797777;
   --gold: #af8180;
@@ -9,15 +9,17 @@
   --silver: #8b6c6c;
 }
 
-body {
-  background-color: var(--dustBlue);
-}
+
 
 /* -----Footer Positioning----- */
 #root {
   position: relative;
   min-height: 100vh;
-  background-color: var(--dustBlue);
+}
+
+body {
+  background-color: rgb(243, 243, 243);
+
 }
 
 .footer-positioning {
@@ -30,7 +32,6 @@ footer {
   bottom: 0;
   text-align: center;
   height: 2.5rem;
-  background-color: var(--dustBlue);
 }
 
 .footer-font {
@@ -65,13 +66,13 @@ label {
 .home-welcome {
   color: var(--gold);
   margin-top: 5rem;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .home-p {
   color: var(--gold);
   margin-top: 2rem;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .blurb {
@@ -115,11 +116,20 @@ button.button6:active {
 
 /* -----Navbar----- */
 nav {
-  background-color: var(--navyBlue);
+  background-color: #fff;
+  background-image: linear-gradient(
+      90deg,
+      transparent 79px,
+      #abced4 79px,
+      #abced4 81px,
+      transparent 81px
+    ),
+    linear-gradient(#eee 0.1em, transparent 0.1em);
+  background-size: 100% 1.2em;
 }
 
 .navbar-brand {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-size: 3.25rem;
 }
 
@@ -172,6 +182,7 @@ nav {
 
 img {
   max-width: 80%;
+  border: solid 1px var(--LdustBlue);
 }
 
 .navbar .navbar-nav {
@@ -211,14 +222,24 @@ img {
 .card-header {
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
-  background-color: var(--navyBlue);
+  background-color: #fff;
+  background-image:
+linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px);
+  background-size: 100% 1.2em;
   color: var(--gold);
 }
 
 .card-body {
-  background-color: var(--LdustBlue);
-  color: white;
-
+  background-color: #fff;
+  background-image: linear-gradient(
+      90deg,
+      transparent 79px,
+      #abced4 79px,
+      #abced4 81px,
+      transparent 81px
+    ),
+    linear-gradient(#eee 0.1em, transparent 0.1em);
+  background-size: 100% 1.2em;
 }
 
 .roboto-font {
